@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAqua"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/gec239088mapaplaestany" />
+
+    <TextView
+        android:id="@+id/plaEstany"
+        android:layout_below="@+id/foto"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Habitants del Pla de l'Estany:" />
+
+    <TextView
+        android:id="@+id/habitants"
+        android:layout_below="@+id/foto"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/plaEstany"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="32.293" />
+
+    <TextView
+        android:id="@+id/municipi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plaEstany"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:text="Habitants del Pla de l'Estany:" />
+
+    <TextView
+        android:id="@+id/numeroHabitants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/habitants"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/plaEstany"
+        android:gravity="right"
+        android:text="32.293" />
+
+    <AutoCompleteTextView
+        android:id="@+id/municipiAuto"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/municipi"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:completionThreshold="1"
+        android:dropDownWidth="wrap_content"
+        android:text=""
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/resultat"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numeroHabitants"
+        android:layout_toEndOf="@+id/municipiAuto"
+        android:layout_toRightOf="@id/municipiAuto"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="right"
+
+        android:text="" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/municipiAuto"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="100dp"
+        android:text="Button" />
+
+</RelativeLayout>
